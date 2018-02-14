@@ -19,6 +19,7 @@ gem 'rake'
 
 gem 'shotgun'
 
+
 group :test do
   gem 'capybara'
   gem 'database_cleaner', '~> 1.4.1'
