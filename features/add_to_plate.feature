@@ -6,11 +6,9 @@ Feature: Customer can add a dish to the plate
   Background:
     Given There is a user in our database
     And The user is logged in as name
-    And There is a dish names "Pizza" in our database
-    And The dish price is "120"
-    And I can see the menu
+    And There is a dish named "Pizza" in our database
 
   Scenario: User clicks add_to_plate button
     When I click add_to_plate for "Pizza"
     Then My order should contain "1" item
-    And i should be redirected to "My Cart" page
+    And The dish price is "400"

@@ -16,29 +16,25 @@ Then(/^Customer should see "([^"]*)"$/) do |text|
 end
 
 Given(/^There is a user in our database$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+
 end
 
 Given(/^The user is logged in as name$/) do
+  
+end
+
+Given(/^There is a dish named "([^"]*)" in our database$/) do |dish|
+  expect(page).to have_content dish
+end
+
+When(/^I click add_to_plate for "([^"]*)"$/) do |arg1|
   pending # Write code here that turns the phrase above into concrete actions
 end
 
-Given(/^There is a dish names "([^"]*)" in out database$/) do |arg1|
+Then(/^My order should contain "([^"]*)" item$/) do |arg1|
   pending # Write code here that turns the phrase above into concrete actions
 end
 
-Given(/^The dish price is "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-Given(/^I can see the menu$/) do
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-Given(/^I click add_to_plate for "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-Given(/^My order should contain "([^"]*)" item$/) do |arg1|
+Then(/^The dish price is "([^"]*)"$/) do |arg1|
   pending # Write code here that turns the phrase above into concrete actions
 end
