@@ -11,5 +11,6 @@ Feature: Customer can add a dish to the plate
     And I can see the menu
 
   Scenario: User clicks add_to_plate button
-    Given I click add_to_plate for "Pizza"
-    And My order should contain "1" item
+    When I click add_to_plate for "Pizza"
+    Then My order should contain "1" item
+    And i should be redirected to "My Cart" page
